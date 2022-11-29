@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  multiplatform-action: kpenfound/multiplatform-action@0.0.6
+
+jobs:
+  ci:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - checkout
+      - setup_remote_docker
+      - multiplatform-action/python-script:
+          script: test.py
+workflows:
+  test-deploy:
+    jobs:
+      - ci
