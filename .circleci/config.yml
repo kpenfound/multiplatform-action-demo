@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  multiplatform-action: kpenfound/multiplatform-action@0.0.6
+  multiplatform-action: kpenfound/multiplatform-action@0.0.7
 
 jobs:
   ci:
@@ -10,8 +10,8 @@ jobs:
       - checkout
       - setup_remote_docker
       - multiplatform-action/python-script:
-          script: test.py
+          script: main.py
 workflows:
-  test-deploy:
+  ci:
     jobs:
       - ci
