@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: kpenfound/multiplatform-action@v0.0.7
+      - uses: kpenfound/multiplatform-action@v0.1.0
         with:
           script: main.py

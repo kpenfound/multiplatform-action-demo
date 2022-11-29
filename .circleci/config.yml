@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  multiplatform-action: kpenfound/multiplatform-action@0.0.7
+  multiplatform-action: kpenfound/multiplatform-action@0.1.0
 
 jobs:
   ci:
